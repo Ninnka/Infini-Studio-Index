@@ -1,0 +1,280 @@
+/*
+* @Author: lan
+* @Date:   2016-10-09 19:02:27
+* @Last Modified by:   lan
+* @Last Modified time: 2016-10-10 19:51:39
+*/
+
+html,
+body {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#root {
+    width: 100%;
+}
+
+
+/**
+ * header
+ */
+
+.header {
+    width: 100%;
+}
+
+.header_wrapper {
+    width: 100%;
+    height: 75px;
+    padding: 15px 0 10px;
+    background: rgb(0, 0, 0);
+    opacity: 0.75;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header_logo_wrapper {
+    text-align: center;
+}
+
+.header_logo_wrapper img {
+    width: 136px;
+    height: 44px;
+}
+
+.header_nav_wrapper {
+    width: 75%;
+    max-width: 1216px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.header_nav_item:not(:first-child) {
+    list-style: none;
+    margin-left: 10%;
+}
+
+.header_nav_wrapper a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.header_nav_wrapper a:hover {
+    color: #FFF;
+}
+
+
+/**
+ * content banner
+ */
+
+#content_wrapper {
+    width: 1200px;
+    max-width: 1200px;
+    margin: 130px auto 0;
+    visibility: hidden;
+}
+
+.banner_bg_wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.banner_bg_wrapper {
+    position: relative;
+}
+
+.banner_bg_title {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.banner_bg_wrapper img:not(:first-child) {
+    width: 17px;
+    height: 54px;
+}
+
+.banner_bg_previous {
+    left: 1.5%;
+    top: 50%;
+    display: none;
+    margin-top: -27px;
+}
+
+.banner_bg_next {
+    right: 1.5%;
+    top: 50%;
+    display: none;
+    margin-top: -27px;
+}
+
+.banner_indicator_wrapper {
+    height: 50px;
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 0;
+    vertical-align: bottom;
+}
+
+.content_describtion {
+    color: rgb(102, 102, 102);
+    text-indent: 28px;
+    font-size: 17px;
+    line-height: 2.0;
+    padding: 15px 0;
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
+    background-color: #F5F5F5;
+}
+
+
+/**
+ * parner
+ */
+
+.parner_wrapper {
+    margin: 2% 15px;
+    text-align: center;
+    width: 100%;
+    min-height: 43px;
+    overflow: hidden;
+}
+
+.parner_wrapper img {
+    margin: 0 10px;
+    min-width: 38px;
+    width: 5%;
+}
+
+
+/**
+ * float list
+ */
+
+.content_floatlist_wrapper {
+    overflow: hidden;
+}
+
+.content_floatlist_wrapper::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.floatlist_item {
+    width: 31%;
+    border-radius: 5px;
+    background: white;
+    float: left;
+    margin: 2% 0;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px #e3e3e3;
+    position: relative;
+}
+
+.floatlist_item_link {
+    text-decoration: none;
+    color: #888888;
+    font-size: 16px;
+}
+
+.floatlist_item_link:hover {
+    color: #000000;
+}
+
+.floatlist_middle_item {
+    margin: 2% 3.5%;
+}
+
+.floatlist_item_link img {
+    width: 100%;
+}
+
+.show_main_title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    clear: both;
+    white-space: nowrap;
+}
+
+.show_shadow_title {
+    display: none;
+    width: 100%;
+    padding: 40px 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+}
+
+.shadow_title_main {
+    font-size: 30px;
+}
+
+.shadow_title_sub {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+/**
+ * footer
+ */
+
+.footer {
+    width: 100%;
+    background: #e0e0e0;
+    min-height: 150px;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.footer_contact_iconlist {
+    width: 50%;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(170,170,170, 0.5);
+    text-align: right;
+    height: 150px;
+    display: inline-block;
+    font-size: 0px;
+    vertical-align: top;
+    padding-right: 7px;
+}
+
+.footer_contact_iconlist img {
+    width: 30px;
+    margin-right: 7px;
+}
+
+.footer_contact_detail {
+    width: 49%;
+    text-align: left;
+    height: 150px;
+    display: inline-block;
+    color: #999999;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-left: 6px;
+}
+
+.footer_contact_detail img {
+    width: 143px;
+    height: 55px;
+}
+.footer_contact_detail p{
+    margin: 5px 0;
+}
+
