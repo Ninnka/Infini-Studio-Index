@@ -5,15 +5,17 @@
 * @Last Modified time: 2016-10-10 10:17:53
 */
 
-.disp_ib{
-	display: inline-block;
+.disp_ib {
+    display: inline-block;
 }
-.pos_abs{
-	position: absolute;
+
+.pos_abs {
+    position: absolute;
 }
-.clear::after{
-	content: "";
-	display: block;
-	clear: both;
-	height: 0;
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
 }

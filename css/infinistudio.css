@@ -245,7 +245,7 @@ body {
 .footer_contact_iconlist {
     width: 50%;
     box-sizing: border-box;
-    border-right: 1px solid rgba(170,170,170, 0.5);
+    border-right: 1px solid rgba(170, 170, 170, 0.5);
     text-align: right;
     height: 150px;
     display: inline-block;
@@ -274,7 +274,7 @@ body {
     width: 143px;
     height: 55px;
 }
-.footer_contact_detail p{
+
+.footer_contact_detail p {
     margin: 5px 0;
 }
-
